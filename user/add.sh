@@ -213,7 +213,7 @@ if [[ $iflimitspeed == y ]]; then
 		if [[ "$us" =~ ^(-?|\+?)[0-9]+(\.?[0-9]+)?$ ]];then
 	   		break
 		else
-	   		echo 'Input Error!'
+	   		echo '输入错误!'
 		fi
 	done
 fi

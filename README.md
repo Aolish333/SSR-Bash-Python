@@ -2,8 +2,7 @@
 ShadowsocksR多用户管理脚本（基于官方mujson版本）
 
 ## 介绍 ##
-一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作
-如有任何问题和意见，欢迎加QQ群：277717865
+一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。已停止更新
 
 ## 更新日志 ##
 - 2017-3-8 1.0正式版本
@@ -37,10 +36,6 @@ ShadowsocksR多用户管理脚本（基于官方mujson版本）
 ## 自检 ##
     wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
 
-## 截图 ##
-![1.png](1.png)
-
-![2.png](2.png)
 
 ## 参考资料 ##
 [ShadowsocksR](https://github.com/FunctionClub/shadowsocksr)
