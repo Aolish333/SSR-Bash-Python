@@ -5,7 +5,7 @@ export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
 
 echo "欢迎使用 SSR-Bash (Python Base)最终版 基本功能不再更新"
-echo "Author：kirito lincvic"
+echo "Author：lincvic"
 
 echo ''
 echo ''
