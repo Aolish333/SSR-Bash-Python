@@ -82,20 +82,6 @@ header = '''
 '''
 
 
-footer = '''
-</div>
-        </div>
-    </div>
-	<footer class="footer">
-		<div class="container">
-			<p>Function Club</p>
-		</div>
-	</footer>
-
-	<script src="../js/base.min.js" type="text/javascript"></script>
-</body>
-</html>
-'''
 
 
 #打印返回的内容
@@ -143,6 +129,5 @@ formhtml = '''
 '''
 
 print formhtml % (myip,getport,getpasswd,jsonmethod,jsonprotocol,jsonobfs)
-print footer
 f.close();
 

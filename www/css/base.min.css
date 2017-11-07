@@ -5426,7 +5426,7 @@ pre code {
 	background-image: radial-gradient(circle, #81c784 10%, #4caf50 11%)
 }
 .btn-blue {
-	background-color: #2196f3
+	background-color: #2196f3;
 }
 .btn-blue:active {
 	background-color: #64b5f6
@@ -6306,7 +6306,7 @@ color:#f5f5f5
 	color: #4caf50
 }
 .form-group-blue .form-label {
-	color: #2196f3
+	color: #2196f3;
 }
 .form-group-green .form-label {
 	color: #4caf50
@@ -7352,7 +7352,7 @@ select.picker__select--month, select.picker__select--year {
 	display: none
 }
 .content-heading {
-	background-color: #4caf50;
+	background-color: deepskyblue;
 	color: #fff;
 	overflow: hidden;
 	padding-top: 48px;
@@ -7384,13 +7384,13 @@ select.picker__select--month, select.picker__select--year {
 	font-weight: 300
 }
 .content-nav {
-	background-color: #fff;
+	background-color: #c8e6c9;
 	-webkit-box-shadow: 0 0 1px rgba(0,0,0,.5);
 	box-shadow: 0 0 1px rgba(0,0,0,.5)
 }
 .content-sub-heading {
-	color: #4caf50;
-	font-size: 20px;
+	color: #2196f3;
+	font-size: 40px;
 	font-weight: 400;
 	line-height: 24px
 }
