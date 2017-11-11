@@ -154,7 +154,7 @@ if [[ $serverc == 9 ]];then
     	cat >/etc/init.d/ssr-bash-python <<EOF
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          SSR-Bash_python
+# Provides:          SSR-Bash-python
 # Required-Start: $local_fs $remote_fs
 # Required-Stop: $local_fs $remote_fs
 # Should-Start: $network
