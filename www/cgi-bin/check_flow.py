@@ -3,6 +3,13 @@
 import json
 import cgi
 
+# <p class="card-heading">端口：%s</p>
+# <p>
+# 已使用流量：%s %s <br>
+# 总流量限制：%s %s </br></br>
+# <a href="../index.html"><button class="btn" type="button">返回</button></a>
+# </p>
+
 f = file("/usr/local/shadowsocksr/mudb.json");
 json = json.load(f);
 
@@ -48,49 +55,23 @@ if(portexist==0):
 
 
 header = '''
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>流量查询</title>
-	<!-- css -->
-	<link href="../css/base.min.css" rel="stylesheet">
-
-	<!-- favicon -->
-	<!-- ... -->
-
-	<!-- ie -->
-    <!--[if lt IE 9]>
-        <script src="../js/html5shiv.js" type="text/javascript"></script>
-        <script src="../js/respond.js" type="text/javascript"></script>
-    <![endif]-->
-    
+    <title>Ethereal by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body>
-    <div class="content">
-        <div class="content-heading">
-            <div class="container">
-                <h1 class="heading">&nbsp;&nbsp;流量查询</h1>
-            </div>
-        </div>
-        <div class="content-inner">
-            <div class="container">
 '''
-
-
 footer = '''
-</div>
-        </div>
-    </div>
-	<footer class="footer">
-		<div class="container">
-			<p>Function Club</p>
-		</div>
-	</footer>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/main.js"></script>
 
-	<script src="../js/base.min.js" type="text/javascript"></script>
 </body>
 </html>
 '''
@@ -100,30 +81,36 @@ footer = '''
 print header
 formhtml = '''
 
-<div class="card-wrap">
-					<div class="row">
-						<div class="col-lg-3 col-md-4 col-sm-6">
-							<div class="card card-alt card-alt-bg">
-								<div class="card-main">
-									<div class="card-inner">
-										<p class="card-heading">端口：%s</p>
-										<p>
-											已使用流量：%s %s <br>
-											总流量限制：%s %s </br></br>
-											<a href="../index.html"><button class="btn" type="button">返回</button></a>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Panel (Banner) -->
+        <section class="panel banner right">
+            <div class="content color0 span-3-75">
+                <h1 class="major">端口： %s<br /></h1>
+                <p>已使用流量： %s %s <br> 总流量限制： %s %s
+                <br><a href="index.html">点我返回首页</a></p>
+            </div>
+            <div class="image filtered span-1-75" data-position="25% 25%">
+                <img src="images/pic01.jpg" alt="" />
+            </div>
+        </section>
+
+
+        <!-- Copyright -->
+        <div class="copyright">&copy; Lincvic <a href="https://github.com/lincvic">Git</a>.</div>
+
+    </div>
+
+</div>
 
 
 
 '''
 print formhtml % (getport,d_int,d_unit,transfer_enable_int,transfer_unit)
-
+print footer
 f.close();
 

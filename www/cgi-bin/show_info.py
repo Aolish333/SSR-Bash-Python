@@ -50,35 +50,25 @@ if(portexist!=0 and passwdcorrect==0):
 
 
 header = '''
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="initial-scale=1.0, width=device-width" name="viewport">
-	<title>连接信息</title>
-	<!-- css -->
-	<link href="../css/base.min.css" rel="stylesheet">
-
-	<!-- favicon -->
-	<!-- ... -->
-
-	<!-- ie -->
-    <!--[if lt IE 9]>
-        <script src="../js/html5shiv.js" type="text/javascript"></script>
-        <script src="../js/respond.js" type="text/javascript"></script>
-    <![endif]-->
-    
+    <title>Ethereal by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 <body>
-    <div class="content">
-        <div class="content-heading">
-            <div class="container">
-                <h1 class="heading">&nbsp;&nbsp;连接信息</h1>
-            </div>
-        </div>
-        <div class="content-inner">
-            <div class="container">
+'''
+footer = '''
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
 '''
 
 
@@ -88,46 +78,39 @@ header = '''
 print header
 
 formhtml = '''
+<!-- Page Wrapper -->
+<div id="page-wrapper">
 
-<div class="card-wrap">
-					<div class="row">
-						
-						
-						<div class="col-lg-4 col-sm-6">
-							<div class="card card-green">
-								<a class="card-side" href="/"><span class="card-heading">连接信息</span></a>
-								<div class="card-main">
-									<div class="card-inner">
-									<p>
-										<strong>服务器地址：</strong> %s </br></br>
-										<strong>连接端口：</strong> %s </br></br>
-										<strong>连接密码：</strong> %s </br></br>
-										<strong>加密方式： </strong> %s </br></br>
-										<strong>协议方式： </strong> </br>%s </br></br>
-										<strong>混淆方式：</strong> </br>%s 
-										</p>
-									</div>
-									<div class="card-action">
-										<ul class="nav nav-list pull-left">
-											<li>
-												<a href="../index.html"><span class="icon icon-check"></span>&nbsp;返回</a>
-											</li>
-										</ul>
-									</div>
-								</div>
+    <!-- Wrapper -->
+    <div id="wrapper">
+						<section class="panel spotlight medium right" id="first">
+							<div class="content span-7">
+								<h1 class="major">连接的信息如下</h1>
+								<p> <strong>服务器地址：</strong> %s <br>
+									<strong>连接端口：</strong> %s <br>
+									<strong>连接密码：</strong> %s <br>
+									<strong>加密方式： </strong> %s <br>
+									<strong>协议方式： </strong> <br> %s <br>
+									<strong>混淆方式：</strong> <br>%s <br>
+									<a href="index.html">点我返回首页</a></p>
 							</div>
-						</div>
-						
-						
-						
-					</div>
-				</div>
+							<div class="image filtered tinted" data-position="top left">
+								<img src="images/pic02.jpg" alt="" />
+							</div>
+						</section>
 
 
+        <!-- Copyright -->
+        <div class="copyright">&copy; Lincvic <a href="https://github.com/lincvic">Git</a>.</div>
 
+    </div>
 
+</div>
 '''
 
 print formhtml % (myip,getport,getpasswd,jsonmethod,jsonprotocol,jsonobfs)
+
+print footer
+
 f.close();
 
