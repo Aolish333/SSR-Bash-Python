@@ -92,10 +92,10 @@ formhtml = '''
             <div class="content color0 span-3-75">
                 <h1 class="major">端口： %s<br /></h1>
                 <p>已使用流量： %s %s <br> 总流量限制： %s %s
-                <br><a href="index.html">点我返回首页</a></p>
+                <br><a href="../index.html">点我返回首页</a></p>
             </div>
             <div class="image filtered span-1-75" data-position="25% 25%">
-                <img src="images/pic01.jpg" alt="" />
+                <img src="../images/pic01.jpg" alt="" />
             </div>
         </section>
 

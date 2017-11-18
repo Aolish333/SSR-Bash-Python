@@ -92,10 +92,10 @@ formhtml = '''
 									<strong>加密方式： </strong> %s <br>
 									<strong>协议方式： </strong> <br> %s <br>
 									<strong>混淆方式：</strong> <br>%s <br>
-									<a href="index.html">点我返回首页</a></p>
+									<a href="../index.html">点我返回首页</a></p>
 							</div>
 							<div class="image filtered tinted" data-position="top left">
-								<img src="images/pic02.jpg" alt="" />
+								<img src="../images/pic02.jpg" alt="" />
 							</div>
 						</section>
 
