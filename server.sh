@@ -81,6 +81,7 @@ fi
 
 if [[ $serverc == 4 ]];then
 	bash /usr/local/shadowsocksr/tail.sh
+    bash /usr/local/SSR-Bash-Python/server.sh
 fi
 
 if [[ $serverc == 5 ]];then
