@@ -2,7 +2,7 @@
 #Check Root
 [ $(id -u) != "0" ] && { echo "Error: You must be root to run this script"; exit 1; }
 echo "##################################
-      SSR-Bash-Python 自检系统
+    自检系统
 ##################################"
 #List /usr/local
 echo "############Filelist of /usr/local" >> /root/report.json
